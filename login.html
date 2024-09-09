@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        p {
+            color: black
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+        .container-fluid {
+            background-color: gold;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 30px;
+
+
+        }
+
+        .idf {
+            float: right;
+            padding: 2px
+        }
+
+        .hov {
+            display: none;
+        }
+
+        .idf:hover .hov {
+            color: blueviolet;
+            display: block;
+            position: absolute;
+        }
+
+        body {
+            background-image: url(./media/back2.png);
+            background-repeat: no-repeat;
+            position: relative;
+            width: auto;
+
+        }
+
+
+
+        label {
+            float: left;
+        }
+
+        #fff {
+            margin-top: 50px;
+            margin-left: 500px;
+            background-color: gold;
+            border: 1px solid white;
+            height: 300px;
+            width: 300px;
+            opacity: 1;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function validateForm() {
+            let x = document.forms["ad"]["email"].value;
+            let y = document.forms["ad"]["password"].value;
+            if (x == "luzvanv@gmail.com" && y == "luz123@") {
+                alert("login successfull");
+                return true;
+            }
+            else if (x == "") {
+
+                alert(" email must be entered");
+                return false;
+            }
+            else if (y == "") {
+                alert(" password must be entered");
+                return false;
+            }
+
+
+            else {
+                alert("login failed");
+                return false;
+            }
+
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <center>
+        <h1>
+            <p>&#9819;&#8497;&#9775;&#9775;&#8518;
+                &#9730;&#8509;&#8487;&#8450;&#8490;&#9819;
+
+
+
+            </p>
+
+
+        </h1>
+
+        <p>
+            <i>order and have a delightfull experience</i>
+        </p>
+    </center>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"></li>
+                <li><a href="./home.html">&#127968;HOME</a>
+                <li> <a href="./about.html">&#128590;ABOUT</a></li>
+                <li> <a href="./contact.html">&#128241;CONTACT US</a></li>
+                <li> <a href="./order.html">&#128666;ORDER</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./day10.html"><span class="glyphicon glyphicon-user"></span>SIGNUP</a></li>
+                <li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="col-md-4">
+        <form name="ad" action="./order.html" onsubmit="return validateForm()">
+            <div class="col-sm-10">
+                <div class="container" id="fff">
+                    <legend style=text-align:center>LOGIN FORM</legend>
+                    <div class="form-group" class="col-mg-4">
+                        <label for="email">enter email</label>
+
+                        <input type="email" class="form-control" class="col-sm-12" id="email" placeholder="enter email">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">enter password</label>
+                        <input type="password" class="form-control" class="col-sm-12" id="password"
+                            placeholder="enter password">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox">remember me</label>
+
+                    </div>
+                    <button class="btn btn-info">
+                        submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5"></div>
+
+
+
+</body>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            color: black
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 30px;
+
+
+        }
+
+
+        .idf {
+            float: right;
+            padding: 2px
+        }
+
+        .hov {
+            display: none;
+        }
+
+        .idf:hover .hov {
+            color: blueviolet;
+            display: block;
+            position: absolute;
+        }
+
+        body {
+            background-image: url(./media/back2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        label {
+            float: left;
+        }
+    </style>
+    <script>
+        function ds() {
+            alert(" Sign up successfull");
+            return true;
+        }
+
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div>
+        <center>
+            <h1>
+                <p>&#9819;&#8497;&#9775;&#9775;&#8518;
+                    &#9730;&#8509;&#8487;&#8450;&#8490;&#9819;
+                </p>
+            </h1>
+            <p>
+                <i>come and have a delightfull experience</i>
+            </p>
+        </center>
+    </div>
+
+    <nav class="navbar navbar-default ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"></li>
+                <li><a href="./home.html">&#127968;HOME</a>
+                <li> <a href="./about.html">&#128590;ABOUT</a></li>
+                <li> <a href="./contact.html">&#128241;CONTACT US</a></li>
+                <li> <a href="./order.html">&#128666;ORDER</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./day10.html"><span class="glyphicon glyphicon-user"></span>SIGNUP</a></li>
+                <li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+
+            </ul>
+
+    </nav>
+    </div>
+    <div class="col-lg-12"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-4">
+        <form onsubmit="return ds()" action="./login.html">
+            <legend style="color:coral">
+                <h1>SIGN UP</h1>
+            </legend>
+
+            <div class="form-group">
+                <label>enter name</label>
+                <input type="text" class="form-control input-sm" id="input-sm" placeholder="enter name" autofocus
+                    maxlength="10">
+            </div>
+            <div class="form-group">
+                <label> enter dob </label>
+                <input type="datetime-local" class="form-control">
+            </div>
+            <div class="form-group">
+                <label> gender</label>
+                <input type="radio" class="form-control" id="radio" name="gender">male
+                <input type="radio" class="form-control" id="ratio" name="gender">female
+            </div>
+            <div class="form-group">
+                <label> email id</label>
+                <input type="email" class="form-control" id="email" placeholder="enter email id" maxlength="15"
+                    autofocus pattern="[a to z]{0-9}">
+            </div>
+            <div class="form-group">
+                <label> password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="enter password" maxlength="15"
+                    autofocus pattern="[a to z]{0-9}">
+            </div>
+            <div class="form-group">
+                <label> enter fav color</label>
+                <input type="color" class="form-control" id="inputdefault">
+            </div>
+            <div class="form-group">
+                <label>enter rate of interest</label>
+                <input type="range" name="4">
+            </div>
+            <div class="form-group">
+                <label>enter food package</label>
+                <select name="course" class="form-group" id="optgroup">
+                    <optgroup label="elite">
+                        <option class="form-control" value="french">french cuisine </option>
+                        <option class="form-control" value="asian">asian dine in</option>
+                    </optgroup>
+                    <optgroup class="form-group" id="optgroup" label="dynamite">
+                        <option class="form-control" value="sweetish">sweetish delight</option>
+                        <option class="form-control" value="peri peri style">peri peri style</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>enter your address </label>
+                <select>
+                    <textarea class="form-control" id="input-sm" rows="5" cols="40"
+                        placeholder="enter address"></textarea>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>choose proof</label>
+                <input type="file" class="form-control" id="file">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-info">
+                <button type="reset" class="btn btn-danger">reset</button>
+                <input type="checkbox" class="form-control" id="checkbox">i agree to the terms and
+                conditions
+            </div>
+        </form>
+
+    </div>
+    <div class="col-md-5"></div>
+
+
+</body>
+
+</html>

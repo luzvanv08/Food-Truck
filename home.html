@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            color: black
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+
+        div {
+            background-color: gold;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 30px;
+
+
+        }
+
+        .idf {
+            float: right;
+            padding: 2px
+        }
+
+        .hov {
+            display: none;
+        }
+
+        .idf:hover .hov {
+            color: blueviolet;
+            display: block;
+            position: absolute;
+        }
+
+        body {
+            background-image: url(./media/back2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: auto;
+            width: 100%;
+
+        }
+
+
+        .asdas {
+            margin-left: 100px;
+        }
+
+        .lasss {
+            height: 140px;
+            width: 240px;
+            margin-right: 200px;
+
+            float: left;
+        }
+
+        #mex {
+            height: auto;
+            width: auto;
+            float: right;
+            rotate: 90deg;
+            margin-top: -90px;
+        }
+
+
+
+        section {
+            animation-duration: 4s;
+            animation-name: slidein;
+        }
+
+        h1 {
+            font-family: 'TIMES NEW ROMAN';
+            font-size: large;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            /* 
+            75% {
+                font-size: 300%;
+                margin-left: 25%;
+                width: 150%;
+            } */
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <center>
+        <h1>
+            <p>&#9819;&#8497;&#9775;&#9775;&#8518;
+                &#9730;&#8509;&#8487;&#8450;&#8490;&#9819;
+
+
+
+            </p>
+
+
+        </h1>
+        <p>
+            <i>order and have a delightfull experience</i>
+        </p>
+    </center>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"></li>
+                <li><a href="./home.html">&#127968;HOME</a>
+                <li> <a href="./about.html">&#128590;ABOUT</a></li>
+                <li> <a href="./contact.html">&#128241;CONTACT US</a></li>
+                <li> <a href="./order.html">&#128666;ORDER</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./day10.html"><span class="glyphicon glyphicon-user"></span>SIGNUP</a></li>
+                <li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <details>
+        <summary>
+            <h1 style="color:black">
+                <i>
+                    CUISINES
+                </i>
+            </h1>
+        </summary>
+        <ul>
+            <details>
+                <summary>
+
+                    <h1 style="color:darkkhaki"><I>INDIAN</I></h1>
+
+                </summary>
+                <section class="asdas" style="font-size: 20px;">
+                    <img class="lasss" src="./media/download (4).jfif">
+                    New Delhi. Street food in New Delhi, for example, might be chaat or samosa.
+                    South India. South Indian cuisine features more coconut milk-based flavor profiles, herbs like
+                    lemongrass and curry
+                    leaves, and native fruits. Rather than breads, you’ll find more rice, lentils, and stews—and sauces
+                    are generally
+                    thinner as a result.
+                    Kerala. Street food in Kerala might include pazham pori (banana fritters) and sweet dumplings.
+                </section>
+            </details>
+            <details>
+                <summary>
+                    <h1>FRENCH</h1>
+                </summary>
+                <section class="fasdas" style="font-size:20px;">
+                    <img class="assads" src="./media/mm.jfif">
+                    <li> Haute cuisine translates to “high cuisine” and refers to a shift in French cooking from an
+                        emphasis on abundance and
+                        quantity to an emphasis on moderation and quality. Marie-Antoine Carême is often credited with
+                        leading this charge in
+                        the 1800s. He taught French cooking as a sophisticated art form that required technique and
+                        precision, and his recipe
+                        manuals made French cuisine more accessible.</li>
+                    <li>French cooking continued to evolve and in the 1900s, nouvelle cuisine was born. This style of
+                        cooking was defined by the
+                        use of high quality, fresh ingredients, lighter meals, and simpler yet breathtaking
+                        presentations. Modern French cooking
+                        draws inspiration from the many cooking concepts French chefs have developed and presented over
+                        centuries.</li>
+
+
+                </section>
+
+            </details>
+            <details>
+                <Summary>
+                    <h1 style="color:darkblue">MEXICAN</h1>
+                </Summary>
+                <section style="font-size: 30px;">
+                    <image id="mex" src="./media/download (5).jfif">
+                        México has one of the richest gastronomies in the world and Mexican food is one of the most
+                        beloved
+                        cuisines worldwide!
+                        It is the product of a set of ancient techniques, that are followed even today, and a sort of
+                        mix
+                        between pre-Hispanic
+                        local products and European ingredients such as certain spices like cinnamon, wheat, cattle,
+                        milk,
+                        cheese, etc.
+                </section>
+
+            </details>
+    </details>
+
+    </ul>
+    </details>
+    <div class="container-fluid">
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <center>
+                <h4 class="text-uppercase fw-bold mb-4"><u>For More Details</u>:</h4>
+                <p>www.foodtruck.org</p>
+                <p><i class="fas fa-home me-3"></i> Coimbatore, TN 641 027, gandhipuram</p>
+                <p>
+                    <i class="fas fa-envelope me-3"> luzvanv@gmail.com</i>
+
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 88 83 33 45 22</p>
+                <p><i class="fas fa-print me-3"></i> + 63 81 55 54 90</p>
+                <hr>
+                <h3 style="color: blue;"><u>Follow us on</u></h3>
+                <i class="fa fa-instagram" style="font-size:48px;color:red"></i>
+                <i class="fa fa-facebook-f" style="font-size:48px;color:blue"></i>
+                <i class="fa fa-twitter" style="font-size:48px;color:gainsboro""></i>
+                        <hr>
+                        <p>&copy; .All rights reserved.</p>
+                    </center>
+                </footer>
+</div>
+</body>
+
+</html>
